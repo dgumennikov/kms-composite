@@ -1,0 +1,8 @@
+variables:
+    AUDIT_AWS_KMS_ALERT_LIST:
+        required: false
+        type: array
+        default:
+            - kms-inventory # not_violation 
+            - kms-key-rotates # not_violation cis_id:2.8 
+        description: "Which rules would you like to run? Possible values are kms-inventory kms-key-rotates"
